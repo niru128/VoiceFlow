@@ -144,9 +144,13 @@ Wait ~1 second
 View the transcribed text in the textarea
 
 ##ScreenShots
+
+
 <img width="1266" height="945" alt="Screenshot 2025-12-23 145914" src="https://github.com/user-attachments/assets/87efd73d-c2d4-4a2a-b064-7714f6c4307b" />
 <img width="1236" height="944" alt="Screenshot 2025-12-23 145924" src="https://github.com/user-attachments/assets/f7ec6d33-045a-40ce-9d34-be73aa916ea9" />
 <img width="1144" height="920" alt="Screenshot 2025-12-23 145932" src="https://github.com/user-attachments/assets/e0329634-633b-40e3-a346-f69a8686e7f3" />
+
+
 
 ##Author 
 Niranjan C B
