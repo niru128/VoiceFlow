@@ -104,11 +104,14 @@ Before running this project, make sure you have:
 
 ### 1️⃣ Install Rust
 
-bash
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
 rustc --version
+
 cargo --version
+
 cargo install tauri-cli
+
 cargo tauri --version
 
 3️⃣ Windows Users (Important)
