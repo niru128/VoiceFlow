@@ -123,15 +123,22 @@ Desktop development with C++
 Windows 10/11 SDK
 
 ▶️ Running the Project Locally
+
 1️⃣ Clone the Repository
+
 git clone https://github.com/niru128/voiceflow-tauri.git
+
 cd voiceflow-tauri
+
 npm install
 
 Create a .env file in the project root:
+
 VITE_DEEPGRAM_API_KEY=your_deepgram_api_key_here
 
+
 cargo tauri dev
+
 The Tauri desktop window will open.
 
 🧪 How to Use
