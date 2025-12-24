@@ -4,9 +4,12 @@ import { transcribeAudio } from "../services/deepgramService"
 export default function useRecorder(onTranscript) {
   const [recording, setRecording] = useState(false);
   const isRecordingRef = useRef(false);
+  
 
   const start = async () => {
     if (isRecordingRef.current) return;
+
+    onTranscript("",true)
 
     isRecordingRef.current = true;
     setRecording(true);

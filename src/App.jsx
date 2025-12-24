@@ -9,20 +9,21 @@ import TranscriptionBox from './components/TranscriptionBox'
 function App() {
   // const [count, setCount] = useState(0)
   const [text, setText] = useState("");
-
+  const [sessionId, setSessionId] = useState(0);
   const [finalText, setFinalText] = useState("");
   const [interimText, setInterimText] = useState("");
 
   const handleTranscript = (transcript, isFinal) => {
-    // console.log("UI received:", transcript, "final:", isFinal);
-     console.log("UI received:", JSON.stringify(transcript), isFinal);
-    if (isFinal) {
-      setFinalText((prev) => prev + " " + transcript);
+    if (transcript === "") {
+      setFinalText("");
       setInterimText("");
-    } else {
-      setInterimText(transcript);
+      setSessionId(prev => prev + 1); 
+      return;
     }
+
+    setFinalText(transcript);
   };
+
 
 
   return (
@@ -34,9 +35,9 @@ function App() {
         <p className='text-2xl font-semibold' >VoiceFlow</p>
 
         <PushToTalk onTranscript={handleTranscript} />
-        
-        <TranscriptionBox  finalText={finalText}
-  interimText={interimText}/>
+
+        <TranscriptionBox finalText={finalText}
+          interimText={interimText} sessionId={sessionId} />
 
       </div>
     </>
